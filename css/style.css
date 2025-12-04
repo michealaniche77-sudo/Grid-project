@@ -114,27 +114,35 @@ body{
     background-color: #fff; /* optional */
     padding: 10px 0;
     z-index: 999;
- }  
+ } 
+/* reset / basics */
 html, body {
-    height: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
+/* make body a column, but allow natural scrolling */
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  min-height: 100vh;     /* at least full screen */
+  display: flex;
+  flex-direction: column;
 }
 
+/* your main content (grid) grows and scrolls naturally */
 #grid-container {
-    flex: 1 0 auto; /* content grows naturally */
+  flex: 1 0 auto;   /* allow it to grow, but not force exact height */
+  /* remove any 'height: 100vh' here */
+  /* do not set overflow:hidden here */
 }
 
+/* footer sits after content (not fixed), pushed to bottom when content is short */
 .footer {
-    flex-shrink: 0;   /* footer stays at the bottom */
-    text-align: center;
-    padding: 10px 0;
-    font-size: 15px;
-    width: 100%;
+  flex-shrink: 0;
+  padding: 12px 0;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
 }
  @media (max-width: 600px){
     #grid-container{
