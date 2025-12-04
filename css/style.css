@@ -115,28 +115,7 @@ body{
     padding: 10px 0;
     z-index: 999;
  } 
-/* reset / basics */
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
 
-/* make body a column, but allow natural scrolling */
-body {
-  min-height: 100vh;     /* at least full screen */
-  display: flex;
-  flex-direction: column;
-}
-
-/* your main content (grid) grows and scrolls naturally */
-#grid-container {
-  flex: 1 0 auto;   /* allow it to grow, but not force exact height */
-  /* remove any 'height: 100vh' here */
-  /* do not set overflow:hidden here */
-}
-
-/* footer sits after content (not fixed), pushed to bottom when content is short */
 .footer {
   flex-shrink: 0;
   padding: 12px 0;
