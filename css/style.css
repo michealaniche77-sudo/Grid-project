@@ -107,7 +107,7 @@ body{
       text-align: center;
       font-size: 15px;
       color: #000;
-    position: fixed;
+   /* position: fixed;*/
     bottom: 0;
     left: 0;
     width: 100%;
@@ -115,6 +115,25 @@ body{
     padding: 10px 0;
     z-index: 999;
  }  
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#grid-container {
+    flex: 1; /* content grows */
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15px;
+    width: 100%;
+}
  @media (max-width: 600px){
     #grid-container{
         grid-template-columns: 1fr;
