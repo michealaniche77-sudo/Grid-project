@@ -120,15 +120,17 @@ html, body {
 }
 
 body {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 #grid-container {
-    flex: 1; /* content grows */
+    flex: 1 0 auto; /* content grows naturally */
 }
 
 .footer {
+    flex-shrink: 0;   /* footer stays at the bottom */
     text-align: center;
     padding: 10px 0;
     font-size: 15px;
