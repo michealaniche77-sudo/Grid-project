@@ -94,7 +94,7 @@ body{
     .griditem:nth-of-type(4) img{
         border-color: #5e3a9e;
     }
-    .griditem:last-of-type(5){
+    .griditem:last-of-type{
         background-color: #fff;
         color: #3f5a57;
         grid-row: 1/3;
